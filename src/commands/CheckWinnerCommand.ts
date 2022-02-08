@@ -62,10 +62,7 @@ const wins = [
   ],
 ]
 
-export default class CheckWinnerCommand extends Command<
-  ITicTacToeState,
-  Payload
-> {
+export default class CheckWinnerCommand extends Command {
   private determineWin() {
     for (let i = 0; i < wins.length; ++i) {
       let hasWinner = true
